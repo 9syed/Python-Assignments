@@ -1,13 +1,25 @@
-game = [[0, 0, 0],
-        [0, 0, 0],
-        [0, 0, 0],]
+game = [[2, 0, 1],
+		[2, 0, 0],
+		[2, 2, 0],]
+		
+for col in range(len(game)):
+    check = []
+
+    for line in game:
+        check.append(line[0])
+        
+    if check.count(check[0]) == len(check) and check[0] != 0:
+        print("Winner!")
 
 
-def tictactoe(player=0, row=0, column=0, just_display=False):
-    print("   0  1  2")
-    if not just_display:
-        game[row][column] = player
-    for count, lines in enumerate(game):
-        print(count, lines)
+'''def win(current_game):
+    for line in game:
+        print(line)
+        not_match = False
+        for element in line:
+            if element != line[0]:
+                not_match == True
+        if not not_match:
+            print("Winner!")
 
-tictactoe()
+win(game)'''
