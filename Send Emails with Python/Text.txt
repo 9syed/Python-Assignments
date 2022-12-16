@@ -1,0 +1,5 @@
+Hi Users
+I wanted to let you know I pushed a new commit on my Github that I am sure you’ll find useful.
+From this post, you’ll learn how to send email with python.
+Please share it with your followers if you feel they will find it useful.
+Thank you.
